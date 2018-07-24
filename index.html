@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Trivia</title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+        <div id="upperBar">
+                <span id="nameLabel">Nombre : </span>
+                <input type="text" name="username"><br>
+                <span id="name"></span>
+            </div>
+    <!--Preguntas+Respuestas-->
+   <form id="quiz" name="quiz">
+
+
+    <p class="questions">¿Han egresado hombres de Laboratoria?</p>
+    <input type="radio" id="mc" name="question1" value="si"> Sí<br>
+    <input type="radio" id="mc" name="question1" value="no"> No<br>
+
+    <p class="questions">¿Hay Laboratoria en Concepción?</p>
+    <input type="radio" id="mc" name="question2" value="mal"> Sí<br>
+    <input type="radio" id="mc" name="question2" value="bien"> No<br>
+
+    <p class="questions">¿En qué generación SCL estamos?</p>
+    <input type="radio" id="mc" name="question4" value="sexta"> 6º Generación<br>
+    <input type="radio" id="mc" name="question4" value="octava"> 8º Generación<br>
+
+
+
+    <input id="button" type="button" value="Termine!" onclick="check();">
+
+
+</form>
+
+<div id="after_submit">
+    <p id="number_correct"></p>
+    <p id="message"></p>
+    
+</div>
+
+
+<!-- Scripts -->
+<script src="scripts/index.js"></script>
+</body>
+
+
+</html>
